@@ -1,0 +1,46 @@
+about us
+- basic introduction on home
+- more details
+join us
+- become member -> discord button at end
+// calendar
+donations {
+    donation: become an IVCC Foundation benefactor
+    bar chart of how much $ raised vs how much needed
+    - imo: show concrete items
+    thank yous for name
+    sponsorship section, list tiers (like pricing)
+}
+Our Team page
+- click on member to show detailed information
+gallery
+3d model
+
+Header: About, Our Team, Join Us, [Donate]
+Footer: Contact us, Connect with us
+
+Where: Gallery, 3D Model
+
+pictures
+- group pictures of members
+- pictures of steps of building
+- competition
+- buildings like ATEP
+
+priorities
+- fast and light
+- mobile friendly
+
+other
+collect email
+newsletter
+
+Introducing IVC's first automotive design team
+IVC's first automotive design club
+The first automotive design club in IVC history
+Design, Build, Race!
+* IVC's first ever automotive design team
+Building a car from start to finish
+
+We are a team of IVC students building an off-road vehicle from scratch.
+* We are building an off-road vehicle from scratch for the 2025 Baja SAE Competition.
