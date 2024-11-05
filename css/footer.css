@@ -1,0 +1,96 @@
+/********** Footer **********/
+footer {
+    background: var(--deep-blue);
+    height: 200px;
+    color: white;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    height: 100%;
+    margin: 0;
+}
+footer menu {
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    padding: 0;
+    margin: 0;
+    justify-items: center;
+}
+
+footer menu li {
+    list-style-type: none;
+    width: fit-content;
+}
+
+footer menu ul {
+    padding-left: 0;
+}
+
+footer menu h4 {
+    margin: 0;
+}
+
+#something-else {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#connect-with-us {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.built-by {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.floating {
+    animation: 1.5s cubic-bezier(0.37, 0, 0.63, 1) infinite alternate floating;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+button.b1 {
+    /* background-color: transparent; */
+    background: #090b0c7f;
+    padding: 0.5rem;
+    margin-left: 0.25rem;
+    border-radius: 5px;
+    border: none;
+    outline: 2px #58E1FF solid;
+    font-weight: 700;
+    line-height: 1.25rem;
+    cursor: pointer;
+    color: white;
+}
+
+.aura {
+    animation: 4s ease-in-out infinite alternate aura_glow;
+
+}
+
+@keyframes aura_glow {
+    0% {
+        box-shadow:
+        0 0 10px 2px rgb(0, 255, 200);
+    }
+    50% {
+        box-shadow:
+        /* 0 0 6px 30px #fff,  inner white */
+        /* 0 0 100px 60px #f0f, middle magenta */
+        0 0 10px 2px #0ff; /* outer cyan */
+    }
+    100% {
+        box-shadow:
+        0 0 10px 2px rgb(111, 121, 255);
+    }
+}

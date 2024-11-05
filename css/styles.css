@@ -1,24 +1,4 @@
-:root {
-    --deep-blue: rgb(0, 71, 137);
-    /* --mobile-background-pic-height: calc(100vh - 65px); */
-    --background-pic-height: calc(100vh - 72px);
-}
-
-@font-face {
-    font-family: "worksans";
-    src: url("WorkSans/WorkSans-Medium.ttf")
-}
-
-body {
-    font-family: "worksans", sans-serif;
-    /* padding: 0px; */
-    margin: 0px;
-}
-.scroll-container {
-    /* scroll-snap-points-y: repeat(100vh); */
-    scroll-snap-type: y mandatory;
-}
-#page1, #page2, #page3, #page4 {
+#part1, #part2, #part3, #part4 {
     scroll-snap-align: center;
 }
 
@@ -27,9 +7,9 @@ a {
     text-decoration: none;
 }
 
-/********** Page 1 **********/
+/********** part 1 **********/
 
-#page1 {
+#part1 {
     margin: 0px;
     height: var(--background-pic-height);
     /* border: dashed black 1px; */
@@ -65,16 +45,6 @@ a.learn-more {
 
     transition: all 0.5s;
 }
-a.learn-more:hover {
-    color: var(--deep-blue);
-    border-color: var(--deep-blue);
-    font-size: 1.5rem;
-}
-
-a#lm1.learn-more::after {
-    /* make white */
-    filter: invert(100%) sepia(30%) saturate(0%) hue-rotate(233deg) brightness(106%) contrast(100%);
-}
 
 a.learn-more::after {
     content: "";
@@ -87,9 +57,23 @@ a.learn-more::after {
     margin-left: 5px;
     position: relative;
     top: 1px;
+
+    transition: all 0.5s;
 }
 
+a.learn-more.white-arrow::after {
+    /* make white */
+    filter: invert(100%) sepia(30%) saturate(0%) hue-rotate(233deg) brightness(106%) contrast(100%);
+}
 
+a.learn-more:hover {
+    font-size: 1.5rem;
+}
+a.learn-more:hover::after {
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+}
 
 #first-words {
     margin: 2rem;
@@ -109,9 +93,9 @@ a.learn-more::after {
     text-shadow: 0 4px 4px rgba(0,0,0,.5);
 }
 
-/********** Page 2 **********/
+/********** part 2 **********/
 
-#page2 article {
+#part2 article {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -120,17 +104,17 @@ a.learn-more::after {
     margin-bottom: 60px;
 }
 
-#page2 article img {
+#part2 article img {
     width: 400px;
     border-radius: 5px;
     filter: drop-shadow(5px -5px 2px rgba(0, 0, 0, 0.5));
 }
 
-#page2 article div {
+#part2 article div {
     width: 400px;
 }
 
-#page2 h2 {
+#part2 h2 {
     margin: 0;
     font-weight: 700;
     font-size: 4rem;
@@ -145,8 +129,8 @@ article#engineers {
     flex-direction: row-reverse;
 }
 
-/********** Page 3 **********/
-#page3 {
+/********** part 3 **********/
+#part3 {
     background-color: black;
     color: white;
 }
@@ -164,7 +148,7 @@ article#engineers {
     text-align: center;
 }
 
-#page4 {
+#part4 {
     height: 100vh;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -181,112 +165,6 @@ article#engineers {
     gap: 8rem;
 }
 
-/********** Header **********/
-
-header {
-    margin: 0px;
-    background-color: white;
-    /* position: absolute; */
-    display: flex;
-    justify-content: space-around;
-    height: 3rem;
-    align-items: center;
-    text-align: center;
-    /* top: 0;
-    position: sticky; */
-}
-
-header * {
-    flex-grow: 1;
-}
-header a {
-    transition: transform 0.1s;
-    display: block; /* to get scale to work */
-}
-header a:hover {
-    transform: scale(1.25);
-    /* happens instantly */
-    /* font-size: 1.25rem; */
-}
-#space-left {
-    flex-grow: 2;
-}
-
-#space-right {
-    flex-grow: 2;
-}
-
-button#support-us {
-    border: 0;
-    background-color: var(--deep-blue);
-    font: inherit;
-    padding: 0.6rem 2rem;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/********** Footer **********/
-footer {
-    background: var(--deep-blue);
-    height: 200px;
-    color: white;
-    padding: 1rem;
-    padding-bottom: 2rem;
-    height: 100%;
-    margin: 0;
-}
-footer menu {
-    display: grid;
-    grid-template-columns: 1fr 4fr 4fr 1fr;
-    grid-template-rows: 1fr 5fr 1fr;
-    padding: 0;
-    margin: 0;
-    justify-items: center;
-}
-
-footer menu li {
-    list-style-type: none;
-    width: fit-content;
-}
-
-footer menu ul {
-    padding-left: 0;
-}
-
-footer menu h4 {
-    margin: 0;
-}
-
-#something-else {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-#connect-with-us {
-    grid-column: 3;
-    grid-row: 2;
-}
-
-.built-by {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.floating {
-    animation: 1.5s cubic-bezier(0.37, 0, 0.63, 1) infinite alternate floating;
-}
-
-@keyframes floating {
-    0% {
-        transform: translateY(-5px);
-    }
-    100% {
-        transform: translateY(5px);
-    }
-}
-
 /***************************************** Media **********************/
 
 @media screen and (max-width: 300px) {
@@ -295,12 +173,6 @@ footer menu h4 {
         /* height: 100vh; */
         display: none;
     }
-}
-
-/* about us */
-
-button#apply {
-    display: block;
 }
 
 /********** Our Team **********/

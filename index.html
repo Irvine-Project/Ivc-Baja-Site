@@ -4,35 +4,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>IVC Baja</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
 <header>
-    <div><a href="/"><img height="40px" src="assets/logo_design.png"></a></div>
-    <div id="space-left"></div>
-    <div><a href="about.html">About</a></div>
-    <div><a href="our-team.html">Our Team</a></div>
-    <!-- <div><a href="join-us.html">Join Us</a></div> -->
-     <div><a href="donor-wall.html">Donor Wall</a></div>
-    <div id="space-right"></div>
-    <div><a href="support-us.html"><button id="support-us">Support Us</button></a></div>
+    <div><a href="/"><img height="40px" src="/assets/logo_design.png"></a></div>
+    <nav id="desktop-nav">
+        <div id="space-left"></div>
+        <div><a href="/pages/about.html">About</a></div>
+        <div><a href="/pages/our-team.html">Our Team</a></div>
+        <!-- <div><a href="join-us.html">Join Us</a></div> -->
+        <div><a href="/pages/donor-wall.html">Donor Wall</a></div>
+        <div id="space-right"></div>
+    </nav>
+    <nav id="hmenu-nav">
+        <img class="hmenu-icon show" id="open" src="/assets/hamburger.png" onclick="togglemenu()">
+        <img class="hmenu-icon" id="close" src="/assets/close.png" onclick="togglemenu()">
+        <div class="hmenu-container">
+            <div class="hmenu-item" onclick="togglemenu()"><a href="/pages/about.html">About</a></div>
+            <div class="hmenu-item" onclick="togglemenu()"><a href="/pages/our-team.html">Our Team</a></div>
+            <!-- <div class="hmenu-item" onclick="togglemenu()"><a href="join-us.html">Join Us</a></div> -->
+            <div class="hmenu-item" onclick="togglemenu()"><a href="/pages/donor-wall.html">Donor Wall</a></div>
+        </div>
+    </nav>
+    <div><a href="/pages/support-us.html"><button id="support-us">Support Us</button></a></div>
 </header>
 <div class="scroll-container">
 <img id="background-pic" src="assets/dust_cloud_crop2.jpg">
-<div id="page1">
+<div id="part1">
     <div id="first-words">
         <p id="short-tagline">IVC's First-Ever Automotive Design Team</di>
         <p id="long-tagline">Building an off-road vehicle from scratch for the 2025 Baja SAE Competition.</p>
-        <a href="about.html" class="learn-more" class="white-arrow">Learn more</a>
+        <a href="/pages/about.html" class="learn-more white-arrow">Learn more</a>
     </div>
 </div>
-<div id="page2">
+<div id="part2">
     <article id="competition">
         <img src="assets/multiple_cars_on_dirt.jpg">
         <div>
             <h2>The Competition</h2>
             <p>The Baja SAE Competition challenges student teams worldwide to demonstrate engineering innovation, technical expertise, and resilience. Each season, our team designs, builds, and tests a custom off-road vehicle, aiming to excel in performance, durability, and teamwork.</p>
-            <a href="about.html#baja" class="learn-more">Learn more</a>
+            <a href="/pages/about.html#baja" class="learn-more">Learn more</a>
         </div>
     </article>
     <article id="engineers">
@@ -40,15 +55,15 @@
         <div>
             <h2>The Engineers</h2>
             <p>Driven by passion and creativity, our engineers bring together a diverse range of skills to design, build, and optimize our vehicle. Each member contributes vital expertise, whether in 3D modeling, CNC machining, or system integration, to turn our shared vision into a Baja-ready machine.</p>
-            <a href="about.html#our-team" class="learn-more">Our Team</a>
+            <a href="/pages/about.html#our-team" class="learn-more">Our Team</a>
         </div>
     </article>
 </div>
-<div id="page3">
+<!-- <div id="part3">
     <img class="floating central-image" src="assets/rotating_wireframe.gif">
     <div class="big-text-arrow-link">Take a Virtual Tour of the Car</div>
-</div>
-<div id="page4">
+</div> -->
+<div id="part4">
     <div class="background-grid">
         <article class="sponsor">David Carter</article>
         <article class="sponsor">Linda Nguyen</article>
@@ -78,9 +93,9 @@
 <footer>
 <menu>
     <li id="something-else">
-        <h4>Something else</h4>
+        <h4>Links</h4>
         <ul>
-            <li>Join Us</li>
+            <li><a href="https://forms.gle/fpaU2HzTeaL9fcESA">Join Us</a></li>
             <li>Press Kit</li>
         </ul>
     </li>
@@ -94,8 +109,10 @@
     </li>
 </menu>
 <!-- Maybe put this in the grid -->
-<div class="built-by">Website built by <span class="floating">The Irvine Project</span></div>
+<div class="built-by">Website built by <button class="b1 aura">Charles Victorio</button></div>
 <div class="floating">test</div>
 </footer>
+
+<script src="/scripts/script.js"></script>
 </body>
 </html>

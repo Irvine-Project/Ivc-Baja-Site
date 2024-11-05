@@ -1,0 +1,16 @@
+:root {
+    --deep-blue: rgb(0, 71, 137);
+    /* --mobile-background-pic-height: calc(100vh - 65px); */
+    --background-pic-height: calc(100vh - 72px);
+}
+
+@font-face {
+    font-family: "worksans";
+    src: url("/fonts/WorkSans/WorkSans-Medium.ttf")
+}
+
+body {
+    font-family: "worksans", sans-serif;
+    /* padding: 0px; */
+    margin: 0px;
+}
