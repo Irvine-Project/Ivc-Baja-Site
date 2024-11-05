@@ -16,7 +16,7 @@ Our Team page
 gallery
 3d model
 
-Header: About, Our Team, Join Us, [Donate]
+Header: About, Our Team, Join Us, [Support Us]
 Footer: Contact us, Connect with us
 
 Where: Gallery, 3D Model
@@ -37,6 +37,7 @@ other
 collect email
 newsletter
 
+Taglines {
 Introducing IVC's first automotive design team
 IVC's first automotive design club
 The first automotive design club in IVC history
@@ -46,3 +47,14 @@ Building a car from start to finish
 
 We are a team of IVC students building an off-road vehicle from scratch.
 * We are building an off-road vehicle from scratch for the 2025 Baja SAE Competition.
+}
+
+What should be on home page? {
+Taglines
+Brief about
+Sponsorship graph and recent sponsors?
+See 3D model
+}
+
+where should recent sponsors go?
+put gallery in press kit
