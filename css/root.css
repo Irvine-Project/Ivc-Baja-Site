@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "worksans";
-    src: url("/fonts/WorkSans/WorkSans-Medium.ttf")
+    src: url("../fonts/WorkSans/WorkSans-Medium.ttf")
 }
 
 html {

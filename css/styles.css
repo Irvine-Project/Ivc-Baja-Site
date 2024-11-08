@@ -175,7 +175,7 @@ article#engineers {
 
 .parallax {
     /* The image used */
-    background-image: url("/assets/engineers_working.jpg");
+    background-image: url("../assets/engineers_working.jpg");
   
     /* Set a specific height */
     /* min-height: 500px;  */
