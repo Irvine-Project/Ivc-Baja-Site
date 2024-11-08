@@ -12,20 +12,20 @@ a.learn-more {
     transition: font-size 0.5s;
 }
 
-a.learn-more::after {
+/* a.learn-more::after {
     content: "";
     display: inline-block;
-    background: url(/assets/arrow_right.svg) no-repeat;
+    background: url(../assets/arrow_right.svg) no-repeat;
     background-size: auto;
-    background-size: 12px 12px;
-    width: 12px;
-    height: 12px;
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
     margin-left: 5px;
     position: relative;
     top: 1px;
 
     transition: all 0.5s;
-}
+} */
 
 a.learn-more.white-arrow::after {
     /* make white */
