@@ -9,6 +9,9 @@
     src: url("/fonts/WorkSans/WorkSans-Medium.ttf")
 }
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "worksans", sans-serif;
     /* padding: 0px; */

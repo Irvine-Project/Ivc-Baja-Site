@@ -2,15 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>About - IVC Baja</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/links.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
-<img class="subpage-banner" src="assets/purple_shirts.jpg">
+<header> <!-- Copy/pasted everywhere -->
+    <div><a href="/"><img height="40px" src="/assets/logo_design.png"></a></div>
+        <div class="dmenu-item" id="space-left"></div>
+        <div class="dmenu-item"><a href="/about.html">About</a></div>
+        <div class="dmenu-item"><a href="/our-team.html">Our Team</a></div>
+        <div class="dmenu-item"><a href="/#donor-wall">Donor Wall</a></div>
+        <div class="dmenu-item" id="space-right"></div>
+    <div><a href="/support-us.html"><button class="support-us">Support Us</button></a></div>
+    <nav id="hmenu-nav">
+        <img class="hmenu-icon show" id="open" src="/assets/hamburger.png" onclick="togglemenu()">
+        <img class="hmenu-icon" id="close" src="/assets/close.png" onclick="togglemenu()">
+        <div class="hmenu-container">
+            <div class="hmenu-item" onclick="togglemenu()"><a href="/about.html">About</a></div>
+            <div class="hmenu-item" onclick="togglemenu()"><a href="/our-team.html">Our Team</a></div>
+            <div class="hmenu-item" onclick="togglemenu()"><a href="/#donor-wall">Donor Wall</a></div>
+        </div>
+    </nav>
+</header>
+<img class="subpage-banner" src="/assets/purple_shirts.jpg">
 <div class="subpage-title">
     <h1>About</h1>
 </div>
-<h2 id="baja">About the Competition</h2>
+<h2 id="baja">The Competition</h2>
 <p>
     The Baja SAE Competition challenges student teams worldwide to demonstrate engineering innovation, technical expertise, and resilience.
     Each season, our team designs, builds, and tests a custom off-road vehicle, aiming to excel in performance, durability, and teamwork.
@@ -28,7 +51,7 @@
     Following a thorough safety inspection, our vehicle competes on a range of courses to test acceleration, traction, and endurance.
     The competition culminates in an endurance race where teams go head-to-head to complete the most laps on a rugged course, proving the durability and reliability of their designs.
 </p>
-<h2 id="our-club">About the Team</h2>
+<h2 id="our-club">The Team</h2>
 <p>
     Driven by passion and creativity, our engineers bring together a diverse range of skills to design, build, and optimize our vehicle.
     Each member contributes vital expertise, whether in 3D modeling, CNC machining, or system integration, to turn our shared vision into a Baja-ready machine.
@@ -53,5 +76,23 @@
     We use TeamGantt streamline our workflow.
     With a detailed budget in place, we’re moving steadily toward a complete, competition-ready vehicle for race day. 
 </p>
+<footer> <!-- Copy/pasted everywhere -->
+    <menu>
+        <li id="links">
+            <h4>Links</h4>
+            <ul>
+                <li><a href="https://forms.gle/fpaU2HzTeaL9fcESA">Join Us</a></li>
+                <li>Press Kit</li>
+            </ul>
+        </li>
+        <li id="connect-with-us">
+            <h4>Connect with us</h6>
+            <ul>
+                <li><a href="mailto:ivcbaja@gmail.com">Email</a></li>
+                <li><a href="https://www.linkedin.com/groups/14553048/">LinkedIn</a></li>
+            </ul>
+        </li>
+    </menu>
+</footer>
 </body>
 </html>

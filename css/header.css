@@ -1,10 +1,11 @@
 /********** Header **********/
 
-header nav {
+header {
     margin: 0px;
     background-color: white;
     /* position: absolute; */
     display: flex;
+    /* gap: 10px; */
     justify-content: space-around;
     height: 3rem;
     align-items: center;
@@ -13,18 +14,20 @@ header nav {
     position: sticky; */
 }
 
-header nav * {
+header * {
     flex-grow: 1;
 }
-header nav a {
-    transition: transform 0.1s;
+header img {
+    flex-grow: 0;
+}
+/* header nav * {
+    flex-grow: 1;
+} */
+.dmenu-item a {
+    transition: 0.1s transform;
     display: block; /* to get scale to work */
 }
-header nav a:hover {
-    transform: scale(1.25);
-    /* happens instantly */
-    /* font-size: 1.25rem; */
-}
+
 #space-left {
     flex-grow: 2;
 }
@@ -33,7 +36,7 @@ header nav a:hover {
     flex-grow: 2;
 }
 
-button#support-us {
+button.support-us {
     border: 0;
     background-color: var(--deep-blue);
     font: inherit;
@@ -41,10 +44,17 @@ button#support-us {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.5s transform;
+}
+
+button.support-us:hover {
+    transform: scale(1.25);
+    /* happens instantly */
+    /* font-size: 1.25rem; */
 }
 
 /********** Hamburger Menu **********/
-#desktop-nav {
+.dmenu-item {
     display: block;
 }
 #hmenu-nav {
@@ -65,13 +75,51 @@ button#support-us {
     display: none;
     background-color: white;
     width: fit-content;
+    position: absolute;
+    right: 10px;
+    top: 55px;
+    padding: 15px;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    /* border-radius: 5px; */
 }
+
 .show {
     display: block;
 }
 
+img.subpage-banner {
+    z-index: -1;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: 75% 50%;
+}
+
+.subpage-title {
+    text-align: center;
+}
+
+.subpage-title h1 {
+    margin: 0;
+    font-size: 6rem;
+
+    position: relative;
+    top: -4rem;
+    font-style: italic;
+    -webkit-text-stroke: 1px #090a0a;
+    color: transparent;
+    text-shadow: 2px 2px 0px var(--deep-blue);
+
+    animation: bounceInUp 1s;
+    animation-play-state: running;
+}
+
 @media screen and (width <= 500px) {
     #desktop-nav {
+        display: none;
+    }
+    .dmenu-item {
         display: none;
     }
     #hmenu-nav {

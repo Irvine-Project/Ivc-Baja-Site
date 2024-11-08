@@ -30,7 +30,7 @@ footer menu h4 {
     margin: 0;
 }
 
-#something-else {
+#links {
     grid-column: 2;
     grid-row: 2;
 }
@@ -61,7 +61,7 @@ footer menu h4 {
 
 button.b1 {
     /* background-color: transparent; */
-    background: #090b0c7f;
+    /* background: #090b0c7f; */
     padding: 0.5rem;
     margin-left: 0.25rem;
     border-radius: 5px;
@@ -73,10 +73,23 @@ button.b1 {
     color: white;
 }
 
-.aura {
+.aura-outer {
     animation: 4s ease-in-out infinite alternate aura_glow;
 
 }
+.aura-inner {
+    box-shadow:
+    inset 10px 5px 20px #f0f,  /* left magenta */
+    inset -10px -5px 20px #0ff; /* right cyan */
+    background: transparent;
+    z-index: 10;
+    position: relative;
+    border: solid black 1px;
+    width: fit-content;
+    padding: 2px;
+    border-radius: 3px;
+}
+
 
 @keyframes aura_glow {
     0% {
