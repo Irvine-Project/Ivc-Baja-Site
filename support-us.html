@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="/css/root.css">
     <link rel="stylesheet" href="/css/links.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/pages/pages.css">
+    <link rel="stylesheet" href="/css/pages/support-us.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
 <header> <!-- Copy/pasted everywhere -->
-    <div><a href="/"><img height="40px" src="/assets/logo_design.png"></a></div>
+    <div><a href="/"><img height="40px" src="/assets/logo_design.png" class="slight-expand"></a></div>
         <div class="dmenu-item" id="space-left"></div>
-        <div class="dmenu-item"><a href="/about.html">About</a></div>
-        <div class="dmenu-item"><a href="/our-team.html">Our Team</a></div>
-        <div class="dmenu-item"><a href="/#donor-wall">Donor Wall</a></div>
+        <div class="dmenu-item"><a href="/about.html" class="slight-expand">About</a></div>
+        <div class="dmenu-item"><a href="/our-team.html" class="slight-expand">Our Team</a></div>
+        <div class="dmenu-item"><a href="/#donor-wall" class="slight-expand">Donor Wall</a></div>
         <div class="dmenu-item" id="space-right"></div>
-    <div><a href="/support-us.html"><button class="support-us">Support Us</button></a></div>
+    <div><a href="/support-us.html"><button class="support-us slight-expand">Support Us</button></a></div>
     <nav id="hmenu-nav">
         <img class="hmenu-icon show" id="open" src="/assets/hamburger.png" onclick="togglemenu()">
         <img class="hmenu-icon" id="close" src="/assets/close.png" onclick="togglemenu()">
@@ -33,13 +35,19 @@
 <div class="subpage-title">
     <h1>Support Us</h1>
 </div>
+<main>
 <p>
     Funding is our biggest roadblock, and we rely on the generosity of sponsors to make our goals a reality.
     Your contributions will directly support our team’s journey, from parts and materials to tools and testing facilities.
     Together, we can showcase the power of student engineering at the 2025 Baja SAE.
 
 </p>
-<button>IVC Foundation website</button>
+
+<div class="centered">
+    <a href="https://www.ivc.edu/foundation/giving">
+        <button class="button-shiny holo-two"><span class="shine"></span>Donate Now</button>
+    </a>
+</div>
 
 <h2>Donation Tiers</h2>
 
@@ -53,30 +61,32 @@
 </ul>
 
 
-<h2>How to donate</h2>
+<!-- <h2>How to donate</h2>
 <p>
 Help us make an impact!
 Click “Donate Now” and join us on this journey.
 Every dollar counts — just $____ could cover a part of our vehicle.
 Your support makes a difference!
-</p>
+</p> -->
+</main>
 <footer> <!-- Copy/pasted everywhere -->
     <menu>
         <li id="links">
             <h4>Links</h4>
             <ul>
                 <li><a href="https://forms.gle/fpaU2HzTeaL9fcESA">Join Us</a></li>
-                <li>Press Kit</li>
+                <!-- <li>Press Kit</li> -->
             </ul>
         </li>
         <li id="connect-with-us">
-            <h4>Connect with us</h6>
+            <h4>Connect with us</h4>
             <ul>
                 <li><a href="mailto:ivcbaja@gmail.com">Email</a></li>
                 <li><a href="https://www.linkedin.com/groups/14553048/">LinkedIn</a></li>
             </ul>
         </li>
     </menu>
-</footer>
+    <div class="built-by">Website built by <a href="https://charlesv.xyz"><button class="b1 aura-outer aura-inner slight-expand">Charles Victorio</button></a></div>
+    </footer>
 </body>
 </html>

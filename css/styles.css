@@ -50,7 +50,11 @@ img#background-pic {
 }
 
 .subtle-text-shadow {
-    text-shadow: 0 4px 4px rgba(0,0,0,.5);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.harder-text-shadow {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.8);
 }
 
 #short-tagline {
@@ -64,8 +68,9 @@ img#background-pic {
 #img-credit {
     position: absolute;
     color: white;
-    top: 87.5vh;
+    top: 80vh;
     left: 2.5%;
+    width: 15vw;
 }
 
 /********** part 2 **********/
@@ -198,6 +203,8 @@ article#engineers {
 @media screen and (width <= 500px) {
     #img-credit {
         /* display: none; */
+        width: 80vw;
+        top: 90vh;
     }
     #part1 {
         display: block;

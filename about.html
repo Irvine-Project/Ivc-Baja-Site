@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="/css/root.css">
     <link rel="stylesheet" href="/css/links.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/pages/pages.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
 <header> <!-- Copy/pasted everywhere -->
-    <div><a href="/"><img height="40px" src="/assets/logo_design.png"></a></div>
+    <div><a href="/"><img height="40px" src="/assets/logo_design.png" class="slight-expand"></a></div>
         <div class="dmenu-item" id="space-left"></div>
-        <div class="dmenu-item"><a href="/about.html">About</a></div>
-        <div class="dmenu-item"><a href="/our-team.html">Our Team</a></div>
-        <div class="dmenu-item"><a href="/#donor-wall">Donor Wall</a></div>
+        <div class="dmenu-item"><a href="/about.html" class="slight-expand">About</a></div>
+        <div class="dmenu-item"><a href="/our-team.html" class="slight-expand">Our Team</a></div>
+        <div class="dmenu-item"><a href="/#donor-wall" class="slight-expand">Donor Wall</a></div>
         <div class="dmenu-item" id="space-right"></div>
-    <div><a href="/support-us.html"><button class="support-us">Support Us</button></a></div>
+    <div><a href="/support-us.html"><button class="support-us slight-expand">Support Us</button></a></div>
     <nav id="hmenu-nav">
         <img class="hmenu-icon show" id="open" src="/assets/hamburger.png" onclick="togglemenu()">
         <img class="hmenu-icon" id="close" src="/assets/close.png" onclick="togglemenu()">
@@ -29,10 +30,11 @@
         </div>
     </nav>
 </header>
-<img class="subpage-banner" src="/assets/purple_shirts.jpg">
+<img class="subpage-banner" src="/assets/lg_holding_block.jpg">
 <div class="subpage-title">
     <h1>About</h1>
 </div>
+<main>
 <h2 id="baja">The Competition</h2>
 <p>
     The Baja SAE Competition challenges student teams worldwide to demonstrate engineering innovation, technical expertise, and resilience.
@@ -59,7 +61,7 @@
 <h3>Our Progress</h3>
 <p>
     This school year, we’ve secured a dedicated workshop and two supportive faculty advisors—Professor Brett McKim and Professor Matthew Wolken—who guide us through the engineering design process.
-    Our team has grown to include ______ dedicated members who meet biweekly to plan, design, and build.
+    Our team has grown to include <span id="member-count">15</span> dedicated members who meet biweekly to plan, design, and build.
     So far, we’ve completed phases from Initial Research to detailed Design Constraints and subsystem planning.
 </p>
 
@@ -76,23 +78,26 @@
     We use TeamGantt streamline our workflow.
     With a detailed budget in place, we’re moving steadily toward a complete, competition-ready vehicle for race day. 
 </p>
+</div>
+</main>
 <footer> <!-- Copy/pasted everywhere -->
     <menu>
         <li id="links">
             <h4>Links</h4>
             <ul>
                 <li><a href="https://forms.gle/fpaU2HzTeaL9fcESA">Join Us</a></li>
-                <li>Press Kit</li>
+                <!-- <li>Press Kit</li> -->
             </ul>
         </li>
         <li id="connect-with-us">
-            <h4>Connect with us</h6>
+            <h4>Connect with us</h4>
             <ul>
                 <li><a href="mailto:ivcbaja@gmail.com">Email</a></li>
                 <li><a href="https://www.linkedin.com/groups/14553048/">LinkedIn</a></li>
             </ul>
         </li>
     </menu>
-</footer>
+    <div class="built-by">Website built by <a href="https://charlesv.xyz"><button class="b1 aura-outer aura-inner slight-expand">Charles Victorio</button></a></div>
+    </footer>
 </body>
 </html>

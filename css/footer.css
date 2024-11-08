@@ -27,7 +27,8 @@ footer menu ul {
 }
 
 footer menu h4 {
-    margin: 0;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
 }
 
 #links {
@@ -61,7 +62,7 @@ footer menu h4 {
 
 button.b1 {
     /* background-color: transparent; */
-    /* background: #090b0c7f; */
+    background-color: var(--deep-blue);
     padding: 0.5rem;
     margin-left: 0.25rem;
     border-radius: 5px;
@@ -81,7 +82,7 @@ button.b1 {
     box-shadow:
     inset 10px 5px 20px #f0f,  /* left magenta */
     inset -10px -5px 20px #0ff; /* right cyan */
-    background: transparent;
+    /* background: transparent; */
     z-index: 10;
     position: relative;
     border: solid black 1px;

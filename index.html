@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
-<header> <!-- Copy/pasted everywhere -->
-    <div><a href="/"><img height="40px" src="/assets/logo_design.png"></a></div>
+<header> <!-- Copy/pasted everywhere, put "#donor-wall" on index.html but "/#donor-wall" elsewhere -->
+    <div><a href="/"><img height="40px" src="/assets/logo_design.png" class="slight-expand"></a></div>
         <div class="dmenu-item" id="space-left"></div>
-        <div class="dmenu-item"><a href="/about.html">About</a></div>
-        <div class="dmenu-item"><a href="/our-team.html">Our Team</a></div>
-        <div class="dmenu-item"><a href="/#donor-wall">Donor Wall</a></div>
+        <div class="dmenu-item"><a href="/about.html" class="slight-expand">About</a></div>
+        <div class="dmenu-item"><a href="/our-team.html" class="slight-expand">Our Team</a></div>
+        <div class="dmenu-item"><a href="#donor-wall" class="slight-expand">Donor Wall</a></div>
         <div class="dmenu-item" id="space-right"></div>
-    <div><a href="/support-us.html"><button class="support-us">Support Us</button></a></div>
+    <div><a href="/support-us.html"><button class="support-us slight-expand">Support Us</button></a></div>
     <nav id="hmenu-nav">
         <img class="hmenu-icon show" id="open" src="/assets/hamburger.png" onclick="togglemenu()">
         <img class="hmenu-icon" id="close" src="/assets/close.png" onclick="togglemenu()">
@@ -30,14 +30,17 @@
     </nav>
 </header>
 <div>
-<img id="background-pic" src="/assets/dust_cloud_crop2.jpg">
+<picture>
+    <source srcset="/assets/dust_cloud_crop2_mobile.jpg" media="(max-width: 500px)">
+    <img id="background-pic" src="/assets/dust_cloud_crop2.jpg">
+</picture>
 <div id="part1">
     <div id="first-words">
-        <p id="short-tagline" class="subtle-text-shadow">IVC's First-Ever Automotive Design Team</di>
-        <p id="long-tagline" class="subtle-text-shadow">Building an off-road vehicle from scratch for the 2025 Baja SAE Competition.</p>
-        <a href="/about.html" class="learn-more white-arrow subtle-text-shadow">Learn more</a>
+        <p id="short-tagline" class="harder-text-shadow">IVC's First-Ever Automotive Design Team</di>
+        <p id="long-tagline" class="harder-text-shadow">Building an off-road vehicle from scratch for the 2025 Baja SAE Competition.</p>
+        <a href="/about.html" class="learn-more white-arrow harder-text-shadow">Learn more</a>
     </div>
-    <div id="img-credit">Courtesy of ChrisChow</div>
+    <div id="img-credit" class="subtle-text-shadow">Photo courtesy of University of South Florida, 2004.</div>
 </div>
 <div id="part2">
     <article id="competition">
@@ -63,7 +66,7 @@
 </div> -->
 <div id="donor-wall">
     <div class="parallax">
-        <h1 class="sticky-header link-header header10vw subtle-text-shadow centered"><a href="/support-us.html">Support Us ⮞</a></h1>
+        <h1 class="sticky-header link-header header10vw subtle-text-shadow centered slight-expand"><a href="/support-us.html">Support Us</a></h1>
         <div class="background-grid">
             <article class="sponsor">David Carter</article>
             <article class="sponsor">Linda Nguyen</article>
@@ -96,11 +99,11 @@
         <h4>Links</h4>
         <ul>
             <li><a href="https://forms.gle/fpaU2HzTeaL9fcESA">Join Us</a></li>
-            <li>Press Kit</li>
+            <!-- <li>Press Kit</li> -->
         </ul>
     </li>
     <li id="connect-with-us">
-        <h4>Connect with us</h6>
+        <h4>Connect with us</h4>
         <ul>
             <li><a href="mailto:ivcbaja@gmail.com">Email</a></li>
             <li><a href="https://www.linkedin.com/groups/14553048/">LinkedIn</a></li>
@@ -108,9 +111,9 @@
     </li>
 </menu>
 <!-- Maybe put this in the grid -->
-<div class="built-by">Website built by <button class="b1 aura-outer aura-inner">Charles Victorio</button></div>
-<div class="floating">test</div>
-<div class="aura-inner">test123</div>
+<div class="built-by">Website built by <a href="https://charlesv.xyz"><button class="b1 aura-outer aura-inner slight-expand">Charles Victorio</button></a></div>
+<!-- <div class="floating">test</div> -->
+<!-- <div class="aura-inner">test123</div> -->
 </footer>
 
 <script src="/scripts/script.js"></script>

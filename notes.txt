@@ -56,5 +56,15 @@ Sponsorship graph and recent sponsors?
 See 3D model
 }
 
-where should recent sponsors go?
-put gallery in press kit
+
+needed
+- press kit
+    - gallery
+- real names in donor wall
+- TIP button
+- Our Team content
+    - all members
+    - pictures for everyone
+    - roles for everyone
+    - pages for everyone
+- use github actions to automate member count

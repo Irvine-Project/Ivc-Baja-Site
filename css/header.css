@@ -47,11 +47,11 @@ button.support-us {
     transition: 0.5s transform;
 }
 
-button.support-us:hover {
-    transform: scale(1.25);
+/* button.support-us:hover { */
+    /* transform: scale(1.25); */
     /* happens instantly */
     /* font-size: 1.25rem; */
-}
+/* } */
 
 /********** Hamburger Menu **********/
 .dmenu-item {
@@ -94,6 +94,7 @@ img.subpage-banner {
     height: 70vh;
     object-fit: cover;
     object-position: 75% 50%;
+    /* box-shadow: inset 0px 20px 5px rgba(0, 0, 0, 0.5); */
 }
 
 .subpage-title {

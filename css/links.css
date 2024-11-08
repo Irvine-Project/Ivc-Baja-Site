@@ -9,7 +9,7 @@ a.learn-more {
     display: block;
     width: fit-content;
 
-    transition: all 0.5s;
+    transition: font-size 0.5s;
 }
 
 a.learn-more::after {
@@ -39,4 +39,11 @@ a.learn-more:hover::after {
     background-size: 16px 16px;
     width: 16px;
     height: 16px;
+}
+
+.slight-expand {
+    transition: transform 0.2s;
+}
+.slight-expand:hover {
+    transform: scale(1.25);
 }

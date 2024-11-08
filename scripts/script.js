@@ -7,3 +7,9 @@ function togglemenu(){
     openHmenuIcon.classList.toggle("show");
     closeHmenuIcon.classList.toggle("show");
 }
+
+function shuffleChildren(elem) {
+    for (let i = elem.children.length; i >= 0; i--) {
+        elem.appendChild(elem.children[Math.random() * i | 0]);
+    }
+}
