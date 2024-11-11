@@ -61,8 +61,8 @@ footer menu h4 {
 }
 
 button.b1 {
-    /* background-color: transparent; */
-    background-color: var(--deep-blue);
+    background-color: transparent;
+    /*background-color: var(--deep-blue);*/
     padding: 0.5rem;
     margin-left: 0.25rem;
     border-radius: 5px;
@@ -71,7 +71,8 @@ button.b1 {
     font-weight: 700;
     line-height: 1.25rem;
     cursor: pointer;
-    color: white;
+    /* color: white; */
+    color: black;
 }
 
 .aura-outer {
@@ -80,9 +81,11 @@ button.b1 {
 }
 .aura-inner {
     box-shadow:
-    inset 10px 5px 20px #f0f,  /* left magenta */
-    inset -10px -5px 20px #0ff; /* right cyan */
-    /* background: transparent; */
+        inset 10px 5px 20px rgb(231, 255, 123),  /* left lime bc idk baja gives lime vibes */
+        inset -10px -5px 20px #0ff; /* right cyan */
+    background: transparent; 
+    text-shadow: 0 0 50px #FFF, 0 0 50px #FFF, 0 0 15px #FFF, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 0px #fff, 0 0 100px #fff;
+
     z-index: 10;
     position: relative;
     border: solid black 1px;
@@ -95,16 +98,22 @@ button.b1 {
 @keyframes aura_glow {
     0% {
         box-shadow:
-        0 0 10px 2px rgb(0, 255, 200);
+        inset 10px 5px 30px rgb(231, 255, 123),  /* left lime */
+        inset -10px -5px 30px #0ff, /*right cyan*/
+        0 0 10px 2px rgb(0, 255, 200); /*out baja blast green*/
     }
     50% {
         box-shadow:
         /* 0 0 6px 30px #fff,  inner white */
         /* 0 0 100px 60px #f0f, middle magenta */
+        inset 10px 5px 30px rgb(0, 255, 200),  /* left baja blast green */
+        inset -10px -5px 30px rgb(231, 255, 123), /*right lime*/
         0 0 10px 2px #0ff; /* outer cyan */
     }
     100% {
         box-shadow:
-        0 0 10px 2px rgb(111, 121, 255);
+        inset 10px 5px 30px #0ff,  /* left cyan */
+        inset -10px -5px 30px rgb(0, 255, 200), /*right baja blast gren*/
+        0 0 10px 2px rgb(231, 255, 123); /*outer lime*/
     }
 }
