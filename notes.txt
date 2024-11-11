@@ -68,3 +68,6 @@ needed
     - roles for everyone
     - pages for everyone
 - use github actions to automate member count
+- expanding elements dont shift other elements
+- why isnt our-team link working
+- change margins
