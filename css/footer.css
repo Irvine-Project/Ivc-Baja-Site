@@ -71,7 +71,8 @@ button.b1 {
     font-weight: 700;
     line-height: 1.25rem;
     cursor: pointer;
-    color: white;
+    /* color: white; */
+    color: black;
 }
 
 .aura-outer {
