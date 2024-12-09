@@ -90,15 +90,15 @@ button.donate {
 }
 
 .slide-in.from-right .slide-in-content {
-    transform: translateX(10%);
-    -webkit-transform: translateX(10%);
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
 }
 
 
 .slide-in.showSlideIn .slide-in-content {
     transform: translateX(0);
     -webkit-transform: translateX(0);
-    background-color: red;
+    /* background-color: red; */
 }
 
 
