@@ -16,7 +16,7 @@ Our Team page
 gallery
 3d model
 
-Header: About, Our Team, Join Us, [Support Us]
+Header: About, Our Team, Join Us, [Donate]
 Footer: Contact us, Connect with us
 
 Where: Gallery, 3D Model

@@ -1,11 +1,11 @@
 function togglemenu(){
-    const menu = document.querySelector(".hmenu-container");
     const openHmenuIcon = document.querySelector(".hmenu-icon#open");
     const closeHmenuIcon = document.querySelector(".hmenu-icon#close");
+    const slideIn = document.querySelector(".slide-in");
 
-    menu.classList.toggle("show");
     openHmenuIcon.classList.toggle("show");
     closeHmenuIcon.classList.toggle("show");
+    slideIn.classList.toggle("showSlideIn");
 }
 
 function shuffleChildren(elem) {
@@ -13,3 +13,7 @@ function shuffleChildren(elem) {
         elem.appendChild(elem.children[Math.random() * i | 0]);
     }
 }
+
+document.querySelector("#toggle").addEventListener("click", e => {
+    document.querySelectorAll(".slide-in").forEach(item => item.classList.toggle("showSlideIn"));
+});

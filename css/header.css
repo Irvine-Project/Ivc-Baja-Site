@@ -20,9 +20,7 @@ header * {
 header img {
     flex-grow: 0;
 }
-/* header nav * {
-    flex-grow: 1;
-} */
+
 .dmenu-item a {
     transition: 0.1s transform;
     display: block; /* to get scale to work */
@@ -36,7 +34,7 @@ header img {
     flex-grow: 2;
 }
 
-button.support-us {
+button.donate {
     border: 0;
     background-color: var(--deep-blue);
     font: inherit;
@@ -47,16 +45,13 @@ button.support-us {
     transition: 0.5s transform;
 }
 
-/* button.support-us:hover { */
+/* button.donate:hover { */
     /* transform: scale(1.25); */
     /* happens instantly */
     /* font-size: 1.25rem; */
 /* } */
 
 /********** Hamburger Menu **********/
-.dmenu-item {
-    display: block;
-}
 #hmenu-nav {
     display: none;
 }
@@ -67,26 +62,45 @@ button.support-us {
     display: none;
 }
 
-.show {
+.hmenu-icon.show {
     display: block;
 }
 
-.hmenu-container {
-    display: none;
-    background-color: white;
-    width: fit-content;
+.slide-in {
+    z-index: 10; /* to position it in front of the other content */
     position: absolute;
-    right: 10px;
-    top: 55px;
+    overflow: hidden; /* to prevent scrollbar appearing */
+}
+
+.slide-in.from-right {
+    right: 0;
+}
+
+.slide-in-content {
+    background-color: white;
+    /* width: fit-content; */
+    /* position: absolute; */
+    /* right: 10px;
+    top: 55px; */
     padding: 15px;
     font-size: 3rem;
     line-height: 3.5rem;
     /* border-radius: 5px; */
+    transition: transfrom 0.5s ease, background-color 0.5s ease;
 }
 
-.show {
-    display: block;
+.slide-in.from-right .slide-in-content {
+    transform: translateX(10%);
+    -webkit-transform: translateX(10%);
 }
+
+
+.slide-in.showSlideIn .slide-in-content {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    background-color: red;
+}
+
 
 img.subpage-banner {
     z-index: -1;
@@ -117,13 +131,10 @@ img.subpage-banner {
 }
 
 @media screen and (width <= 500px) {
-    #desktop-nav {
-        display: none;
-    }
     .dmenu-item {
         display: none;
     }
     #hmenu-nav {
-        display: flex;
+        display: block;
     }
 }

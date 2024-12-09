@@ -14,6 +14,7 @@ img.object-position-center {
     width: 50%;
     gap: 50px;
     margin: auto;
+    margin-bottom: 5rem;
 }
 #members article img {
     max-width: 200px;
