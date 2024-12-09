@@ -119,15 +119,22 @@ img.subpage-banner {
     margin: 0;
     font-size: 6rem;
 
-    position: relative;
-    top: -4rem;
+    /* position: relative;
+    top: -4rem; */
     font-style: italic;
-    -webkit-text-stroke: 1px #090a0a;
-    color: transparent;
-    text-shadow: 2px 2px 0px var(--deep-blue);
+    color: var(--deep-blue);
+    /* -webkit-text-stroke: 1px #090a0a; */
+    /* color: transparent; */
+    /* text-shadow: 2px 2px 0px var(--deep-blue); */
 
     animation: bounceInUp 1s;
     animation-play-state: running;
+}
+
+@media screen and (width <= 600px) {
+    .subpage-title h1 {
+        font-size: 15vw;
+    }
 }
 
 @media screen and (width <= 500px) {
